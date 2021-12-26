@@ -96,14 +96,12 @@ function move() {
  }
 }
 
-function mousePressed() {
+function mouseMoved() {
   clicked = true;
   cnv.mouseMoved(move);
 }
 
-function mouseReleased() {
-  clicked = false;
-}
+
 
 function draw() {
   
