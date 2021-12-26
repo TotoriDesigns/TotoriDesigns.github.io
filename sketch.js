@@ -95,7 +95,7 @@ if(l2z(mouseX) == 0 || l2z(mouseY) == 0)
       theta = atan(l2z(mouseY)/l2z(mouseX)) 
       abstheta = atan(l2z(mouseY)/l2z(mouseX)) 
       
-    }
+    
    if(l2z(mouseX) <= 0 && l2z(mouseY) <= 0){theta = theta + PI}
   else if(l2z(mouseX) <= 0 && l2z(mouseY) >= 0){theta = theta + PI}
   else if(l2z(mouseX) >= 0 && l2z(mouseY) <= 0){theta += 2*PI}
