@@ -65,7 +65,18 @@ function move() {
 
 function mouseMoved() {
    waiting = 2;
- if(l2z(mouseX) == 0 || l2z(mouseY) == 0)
+ 
+}
+
+
+
+function draw() {
+  
+  background(40);
+  //textSize(32);
+  //text(str(degrees(theta)), 10, 30);
+  //fill(0, 102, 153);
+if(l2z(mouseX) == 0 || l2z(mouseY) == 0)
   {
     if(l2z(mouseX) == 0 && l2z(mouseY)<0)
     {
@@ -98,17 +109,6 @@ function mouseMoved() {
   else if(l2z(mouseX) <= 0 && l2z(mouseY) >= 0){theta = theta + PI}
   else if(l2z(mouseX) >= 0 && l2z(mouseY) <= 0){theta += 2*PI}
  }
-}
-
-
-
-function draw() {
-  
-  background(40);
-  //textSize(32);
-  //text(str(degrees(theta)), 10, 30);
-  //fill(0, 102, 153);
-
   if(waiting == 1)
     {
       memory_theta = theta
