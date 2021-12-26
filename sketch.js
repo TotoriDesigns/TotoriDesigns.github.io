@@ -58,15 +58,6 @@ function atv(angle,scaling = 300)
   return createVector(cos(angle)*scaling,sin(angle)*scaling)
 }
 
-function move() {
- if(clicked){
-
-}
-
-function mouseMoved() {
-   waiting = 2;
- 
-}
 
 
 
@@ -109,19 +100,8 @@ if(l2z(mouseX) == 0 || l2z(mouseY) == 0)
   else if(l2z(mouseX) <= 0 && l2z(mouseY) >= 0){theta = theta + PI}
   else if(l2z(mouseX) >= 0 && l2z(mouseY) <= 0){theta += 2*PI}
  }
-  if(waiting == 1)
-    {
-      memory_theta = theta
-      waiting = 0;
-    }
-  else if(waiting == 2){
-    let rotationscale = theta - memory_theta;
-    cache_theta = theta
-    waiting = 1
-  }
-  else{
-    
-  }
+  cache_theta = theta
+   
   for(let i = 0 ; i < cheongan.length;i++)
     {
       texting(cheongan[i]);
