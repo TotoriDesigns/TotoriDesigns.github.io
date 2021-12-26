@@ -60,7 +60,11 @@ function atv(angle,scaling = 300)
 
 function move() {
  if(clicked){
- waiting = 2;
+
+}
+
+function mouseMoved() {
+   waiting = 2;
  if(l2z(mouseX) == 0 || l2z(mouseY) == 0)
   {
     if(l2z(mouseX) == 0 && l2z(mouseY)<0)
@@ -94,11 +98,6 @@ function move() {
   else if(l2z(mouseX) <= 0 && l2z(mouseY) >= 0){theta = theta + PI}
   else if(l2z(mouseX) >= 0 && l2z(mouseY) <= 0){theta += 2*PI}
  }
-}
-
-function mouseMoved() {
-  clicked = true;
-  cnv.mouseMoved(move);
 }
 
 
