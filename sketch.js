@@ -95,11 +95,11 @@ if(l2z(mouseX) == 0 || l2z(mouseY) == 0)
       theta = atan(l2z(mouseY)/l2z(mouseX)) 
       abstheta = atan(l2z(mouseY)/l2z(mouseX)) 
       
-    
+    }
    if(l2z(mouseX) <= 0 && l2z(mouseY) <= 0){theta = theta + PI}
   else if(l2z(mouseX) <= 0 && l2z(mouseY) >= 0){theta = theta + PI}
   else if(l2z(mouseX) >= 0 && l2z(mouseY) <= 0){theta += 2*PI}
- }
+ 
   cache_theta = theta
    
   for(let i = 0 ; i < cheongan.length;i++)
@@ -133,5 +133,4 @@ if(l2z(mouseX) == 0 || l2z(mouseY) == 0)
   cache_theta = cache_theta*0.9
   
   
-
 }
